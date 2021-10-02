@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{126BDDDF-A4AE-418C-B4F7-84C5F5C80517}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Trabajo_Practico_definitivo</RootNamespace>
+    <AssemblyName>Trabajo Practico definitivo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cargando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cargando.Designer.cs">
+      <DependentUpon>cargando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dudas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dudas.Designer.cs">
+      <DependentUpon>Dudas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menupagina2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menupagina2.Designer.cs">
+      <DependentUpon>Menupagina2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla login.Designer.cs">
+      <DependentUpon>Pantalla login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dudas.resx">
+      <DependentUpon>Dudas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menupagina2.resx">
+      <DependentUpon>Menupagina2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla login.resx">
+      <DependentUpon>Pantalla login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partes-motor_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-desafio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cambiar-bujías-de-encendido.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1614608575170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volante_fts-11-75d3eeae10d999a62815542214960005-1024-1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e264d6b2ae447ee122534fb26a04bf0f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAZ_686066bdb3d14fa8981b872eded20d5e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4500530015.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
